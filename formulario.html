@@ -4,82 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Picolé</title>
+    <title>Vagas</title>
     <style>
+        
         .botoes
         {
             width: 100%;
             display: flex;
-            justify-content: right;
+            justify-content: left;
         }
         button
         {
-            color: red;
-            background-color: yellow;
-            width: 100px;
+            color: rgb(48, 48, 48);
+            background-color: rgb(222, 222, 222);
+            width: 80px;
             height: 60px;
-            font-size: 20px;
+            font-size: 14px;
         }
         button:hover
         {
-            background-color: green;
+            background-color: rgb(125, 125, 125);
         }
     </style>
-</head>
-<body>
-
+    
     <fieldset>
-        <legend> Dados do Picolezinho </legend>
-        Descrição:
-        <input type="text"  class="caixa_larga"  id="descricao">
-        <br>  <br>
-        Digite o preço:
-        <input type="text"  class="caixa_larga"  id="preco">
-        <br>  <br>
-        Fornecedor da parada:
-        <input type="text"  class="caixa_larga"  id="fornecedor">
-        <br>  <br>
-        Quantidade a desenrolar:
-        <input type="number" class="caixa_larga" id="quantidade">
-        <br>  <br>
-        Data do pedido:
-        <input type="date" id="data_pedido">
+        <legend> Dados Pessoais </legend>
+         Nome:
+        <input type=”text” class=”caixa_larga” id=”nome” >
+        <br> <br>
+        Endereço: 
+        <input type=”text” class=”caixa_larga” id=”endereco”>
+        <br> <br>
+        Cidade:
+        <input type="text" class="caixa_larga" id="cidade">
+        <br> <br>
+        Selecione um Estado para entrega:
+        <select id="estado">
+            <option> Amapá</option>
+            <option> Bahia</option>
+            <option> Paraná</option>
+            <option selected> Santa Catarina</option>
+        </select>
     </fieldset>
 
 <br> <br>
 
     <fieldset>
-        <legend>Sobre o sabor</legend>
-        Escolha somente 1 sabor:
+        <legend> Dados profissionais </legend>
+        Natureza do cargo 
         <br> <br>
-        <input type="radio" id="pimenta" name="sabores">
-        Pimenta
-        <input type="radio" id="cenoura" name="sabores">
-        Cenoura
-        <input type="radio" id="cimento" name="sabores">
-        Cimento
-        <input type="radio" id="abobora" name="sabores">
-        Abóbora
-        <br>  <br>
-        Selecione quais as cores da embalagem:
+        <input type="radio" id="Gerência" name="cargos">
+        Gerência
+        <input type="radio" id="Financeiro" name="cargos">
+        Financeiro
+        <input type="radio" id="recepcao" name="cargos">
+        Recepção
+        <input type="radio" id="administrativo" name="cargos">
+        Administrativo 
+        <input type="radio" id="juridico" name="cargos">
+        Jurídico
+        <br> <br> 
+        Área de interesse:
         <br>
-        <input type="checkbox" id="amarelo">Amarelo
-        <input type="checkbox" id="verde">Verde
-        <input type="checkbox" id="burro">Burro quando foge
+        <input type="checkbox" id="computacao">Computação 
+        <input type="checkbox" id="biologia">Biologia 
+        <input type="checkbox" id="meio_ambiente">Meio Ambiente 
+        <input type="checkbox" id="engenharia">Engenharia 
+        <input type="checkbox" id="historia">História 
         <br> <br>
-        Selecione um Estado para entrega:
-        <select id="estado">
-            <option>Amapá</option>
-            <option>Bahia</option>
-            <option>Paraná</option>
-            <option selected>Santa Catarina</option>
-        </select>
+        Mini-currículo
+        <br>
+        <textarea class="texto" id="curriculo">
+        
+        </textarea>
     </fieldset>
+
+    
 
     <div class="botoes">
         <button>ENVIAR</button>
         <button>LIMPAR</button>
     </div>
     
+
+
+
 </body>
 </html>
